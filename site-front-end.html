@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="menu.css">
 </head>
 <body>
+    <button id="openSidebar" onclick="openSidebar()">&#9776;</button>
     <!-- Este é o elemento que define o Menu-->
-     <div class="sidebar">
+     <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closeButton" onclick="closeSidebar()">Fechar barra lateral(X)</a>
         <a class="active" href="index.html">Home</a>
         <a href="news.html">News</a>
         <a href="contact.html">Contact</a>

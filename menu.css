@@ -1,12 +1,46 @@
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 220px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
     overflow: auto;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: none;/* hidden by default*/
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/*barra lateral visivel*/
+
+.sidebar.show{
+    display: block;
+}
+
+/* Hamburguer button (não sei o que significa, vamos ver depois que o site funcionar */
+
+#openSidebar {
+    font-size: 26px;
+    cursor: pointer;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.sidebar .closeButton{
+    display: block;
+    text-align: left;
+    padding: 10px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    background-color: lightcoral;
+
 }
 
 .sidebar a {
@@ -28,7 +62,7 @@
 .content {
     padding: 1px 16px;
     position: inherit;
-    margin-left: 200px;
+    margin: 0 auto;
     width: 700px;
     background: #fff;
     display: grid;
@@ -42,7 +76,7 @@
     padding: 10px;
     background-color: rgb(158, 183, 209);
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 0;
     text-align: center;
     text-transform: uppercase;
     color: white;
@@ -53,7 +87,7 @@
     position: relative;
     max-height: 40px;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 0;
     color: crimson;
 }
 
@@ -72,7 +106,7 @@
 }
 
 .modal {
-    position: absolute;
+    position: center;
     display: none;
     left: 30%;
     top: 30%;

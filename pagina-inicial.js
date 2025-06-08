@@ -48,3 +48,11 @@ function closeModal() {
   document.getElementById("knowMore").style.display = 'none';
 
 }
+
+function openSidebar(){
+    document.getElementById('sidebar').classList.add('show');
+}
+
+function closeSidebar(){
+    document.getElementById('sidebar').classList.remove('show')
+}
