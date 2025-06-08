@@ -54,5 +54,6 @@ function openSidebar(){
 }
 
 function closeSidebar(){
-    document.getElementById('sidebar').classList.remove('show')
+    document.getElementById('sidebar').classList.remove('show');
 }
+
