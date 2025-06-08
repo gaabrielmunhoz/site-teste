@@ -35,8 +35,10 @@ function openModal(cupcake){
             break;
         default:
             txt1.innerHTML  = "Cookies And Cream";    
-            txt2.innerHTML  = "Cookies And Cream";txt1.innerHTML  = "Delicioso cupkake.";
+            txt2.innerHTML  = "Cookies And Cream";
+            txt1.innerHTML  = "Delicioso cupkake.";
             txt3.innerHTML  = "R$15,00";
+            break;
 
     }
     document.getElementById("knowMore").style.display = "inline-block";
