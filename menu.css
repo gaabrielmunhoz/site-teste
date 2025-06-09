@@ -15,7 +15,7 @@
 
 /*barra lateral visivel*/
 
-.sidebar.show{
+.sidebar.show {
     display: block;
 }
 
@@ -70,7 +70,9 @@
     margin: 0 auto;
     width: 700px;
     background: #fff;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: auto;
     height: 100%;
 }
@@ -109,6 +111,7 @@
     background: #fff;
     padding: 40px;
 }
+
 
 .modal {
     position: fixed;
@@ -236,4 +239,62 @@
     color: rgb(255, 255, 255);
     background-color: #acc4dd;
     border-radius: 10px 10px;
+}
+
+
+.novidades{
+  position: relative;      /* para o filho absolute se basear nele */
+  width: 600px;            /* mesma largura do seu retângulo rosa */
+  height: 200px;           /* mesma altura do retângulo */
+  margin: 20px auto;
+  overflow: hidden;        /* esconde o que passar do container */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+
+.novidades:hover {
+    transform: translate(-4px);
+}
+
+.novidades .imgNews {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+}
+
+.novidades a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.novidades-title {
+  position: absolute;      /* posiciona em relação à .novidades */
+  bottom: 0;               /* “gruda” no pé do container */
+  left: 0;
+  width: 100%;
+  height: 50px;            /* defina a altura do seu retângulo de texto */
+  background-color: lightcoral;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;       /* centraliza verticalmente o texto */
+  border-radius: 0 0 8px 8px;
+}
+
+.noticiaTitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1px 16px;
+    position: inherit;
+    margin: 0 auto;
+    width: 700px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    height: 100%;
 }

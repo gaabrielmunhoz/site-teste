@@ -1,22 +1,24 @@
+<!-- cardapio.html -->
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cupcake Store</title>
-    <link rel="stylesheet" href="menu.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cardápio | Cupcake Store</title>
+  <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <button id="openSidebar" onclick="openSidebar()">☰</button>
-    <!-- Este é o elemento que define o Menu-->
-     <div id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closeButton" onclick="closeSidebar()">× Fechar</a>
-        <a class="active" href="cardapio.html">Cardápio</a>
-        <a href="novidades.html">Novidades</a>
-        <a href="contact.html">Seu contato</a>
-        <a href="about.html">Sobre</a>
-     </div>
-     <div class="content">
+  <button id="openSidebar" onclick="openSidebar()">☰</button>
+
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closeButton" onclick="closeSidebar()">× Fechar</a>
+    <a class="active" href="cardapio.html">Cardápio</a>
+    <a href="novidades.html">Novidades</a>
+    <a href="contact.html">Seu Contato</a>
+    <a href="about.html">Sobre</a>
+  </div>
+
+       <div class="content">
         <!-- Aqui vai o conteúdo da página principal -->
         <h2 class="titleTop">Cupcake Store</h2>
         <h3 class="titleBottom">Cardápio</h3>
@@ -52,21 +54,19 @@
                 <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('CupFlavor6')">
             </div>
         </div>
-     </div>
 
-<!-- Modal Detalhes-->
-     <div id="knowMore" class="modal">
-        <header>
-            <span id="closeModalButton" class="topright" onclick="closeModal()">X</span>
-        </header>
-        <div>
-            <p id="txt1" class="infoH"></p>
-            <p id="txt2" class="info"></p>
-            <p id="txt3" class="info"></p>
-        </div>
-     </div>
-<script src="pagina-inicial.js"></script>
+  <!-- Modal Detalhes (se quiser mantê-lo global) -->
+  <div id="knowMore" class="modal">
+    <header>
+      <span id="closeModalButton" class="topright" onclick="closeModal()">X</span>
+    </header>
+    <div>
+      <p id="txt1" class="infoH"></p>
+      <p id="txt2" class="info"></p>
+      <p id="txt3" class="info"></p>
+    </div>
+  </div>
 
-    
+  <script src="pagina-inicial.js"></script>
 </body>
 </html>
