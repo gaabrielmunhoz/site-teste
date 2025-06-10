@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- fecha corretamente o title -->
+  <title>Seu Contato | Cupcake Store</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+  <script src="pagina-inicial.js"></script>
+
+  <button id="openSidebar" onclick="openSidebar()">☰</button>
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closeButton" onclick="closeSidebar()">× Fechar</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="novidades.html">Novidades</a>
+    <a class="active" href="seu-contato.html">Fale conosco</a>
+    <a href="sobre.html">Sobre</a>
+  </div>
+
+  <!-- abre o main e o container .content -->
+  <main class="pagina-contato">
+    <div class="content">
+      <h2 class="titleTop">Cupcake Store</h2>
+      <h3 class="titleBottom">Fale conosco</h3>
+
+      <!-- formulário que some ao “enviar” -->
+      <form class="form-contato" onsubmit="this.style.display='none'; document.getElementById('msg-sucesso').style.display='block'; return false;">
+        <input type="text"  name="nome"     placeholder="Nome completo" required>
+        <input type="tel"   name="telefone" placeholder="Telefone"      required>
+        <input type="email" name="email"    placeholder="E-mail"        required>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="msg-sucesso" style="display:none; text-align:center; margin-top:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <p>Contato enviado com sucesso!</p>
+        <a href="cardapio.html">Voltar para a página inicial</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

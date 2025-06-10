@@ -13,13 +13,11 @@
     z-index: 1;
 }
 
-/*barra lateral visivel*/
 
 .sidebar.show {
     display: block;
 }
 
-/* Hamburguer button (não sei o que significa, vamos ver depois que o site funcionar */
 
 #openSidebar {
     font-size: 26px;
@@ -251,11 +249,11 @@
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   cursor: pointer;
-  transition: transform .2s ease;
+  transition: transform .7s ease;
 }
 
 .novidades:hover {
-    transform: translate(-4px);
+    transform: scale(1.05);
 }
 
 .novidades .imgNews {
@@ -297,4 +295,102 @@
     align-items: center;
     overflow: auto;
     height: 100%;
+}
+
+.sobre a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.pagina-sobre {
+    text-align: center;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;              /* espaço entre os botões */
+  margin: 0 auto 5px;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.sobre .botao {
+  display: block;
+  margin: 0 auto 5px;
+  width: 300px;          /* largura fixa — troque por quanto achar melhor */
+  height: auto;
+  padding: 8px 0;        /* só controla altura */
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  background-color: lightcoral;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.7s ease, background-color 0.6s ease;
+}
+
+.sobre .botao:hover {
+  background-color: rgb(255,79,79);
+  transform: scale(1.05);
+}
+
+/* ─── layout geral ─── */
+.pagina-contato .content {
+  background-color: #fff;
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ─── títulos ─── */
+.pagina-contato .titleTop {
+  background: rgb(158,183,209);
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.pagina-contato .titleBottom {
+  color: crimson;
+  margin-bottom: 24px;
+}
+
+/* ─── formulário ─── */
+.form-contato {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form-contato input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-contato button {
+  padding: 10px;
+  width: 423px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: lightcoral;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.form-contato button:hover {
+  background-color: rgb(255,79,79);
 }
